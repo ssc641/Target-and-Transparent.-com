@@ -8,7 +8,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://target-transparent-construction.web.app/sitemap.xml
+Sitemap: https://tandt-construction.web.app/sitemap.xml
 
 # Block AI training bots (optional - remove if you want AI visibility)
 User-agent: GPTBot
