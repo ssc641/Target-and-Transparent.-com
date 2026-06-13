@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Target & Transparent</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Mobile Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2>Target & Transparent</h2>
+            <button class="close-btn" onclick="toggleSidebar()"><i class="fas fa-times"></i></button>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="portfolio.html" class="active"><i class="fas fa-briefcase"></i> Portfolio</a>
+            <a href="services.html"><i class="fas fa-cogs"></i> Services</a>
+            <a href="index.html#about"><i class="fas fa-info-circle"></i> About</a>
+            <a href="index.html#contact"><i class="fas fa-envelope"></i> Contact</a>
+        </nav>
+    </div>
+
+    <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="logo">
+            <i class="fas fa-bullseye"></i>
+            <span>Target & Transparent</span>
+        </div>
+        <button class="menu-toggle" id="menuToggle" onclick="toggleSidebar()">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="desktop-nav">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html" class="active">Portfolio</a>
+            <a href="services.html">Services</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Portfolio Hero -->
+    <section class="page-hero portfolio-hero">
+        <div class="blue-overlay"></div>
+        <div class="hero-content">
+            <h1>Our Portfolio</h1>
+            <p>Showcasing precision, creativity, and transparent results</p>
+        </div>
+    </section>
+
+    <!-- Filter Buttons -->
+    <section class="portfolio-filter">
+        <div class="container">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="branding">Branding</button>
+            <button class="filter-btn" data-filter="web">Web Design</button>
+            <button class="filter-btn" data-filter="marketing">Marketing</button>
+            <button class="filter-btn" data-filter="video">Video</button>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="assets/project1.jpg" alt="Brand Identity Project">
+                            <div class="portfolio-overlay">
+                                <button class="view-btn" onclick="openLightbox(this)">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="category">Branding</span>
+                            <h3>Corporate Rebrand</h3>
+                            <p>Complete brand identity overhaul for a leading logistics company.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="assets/project2.jpg" alt="E-commerce Website">
+                            <div class="portfolio-overlay">
+                                <button class="view-btn" onclick="openLightbox(this)">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="category">Web Design</span>
+                            <h3>E-Commerce Platform</h3>
+                            <p>Full-stack marketplace solution with vendor dashboards.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 (Video) -->
+                <div class="portfolio-item" data-category="video">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image video-thumb">
+                            <video muted loop poster="assets/video-thumb.jpg">
+                                <source src="assets/project-video1.mp4" type="video/mp4">
+                            </video>
+                            <div class="play-icon"><i class="fas fa-play"></i></div>
+                            <div class="portfolio-overlay">
+                                <button class="view-btn" onclick="openVideoModal(this)">
+                                    <i class="fas fa-play-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="category">Video</span>
+                            <h3>Product Launch Video</h3>
+                            <p>Cinematic promotional video for tech startup.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-item" data-category="marketing">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="assets/project3.jpg" alt="Marketing Campaign">
+                            <div class="portfolio-overlay">
+                                <button class="view-btn" onclick="openLightbox(this)">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="category">Marketing</span>
+                            <h3>Social Media Campaign</h3>
+                            <p>Viral marketing strategy reaching 500K+ impressions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="assets/project4.jpg" alt="Logo Design">
+                            <div class="portfolio-overlay">
+                                <button class="view-btn" onclick="openLightbox(this)">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="category">Branding</span>
+                            <h3>Logo & Stationery</h3>
+                            <p>Modern minimalist brand package for consulting firm.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 (Video) -->
+                <div class="portfolio-item" data-category="video">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image video-thumb">
+                            <video muted loop poster="assets/video-thumb2.jpg">
+                                <source src="assets/project-video2.mp4" type="video/mp4">
+                            </video>
+                            <div class="play-icon"><i class="fas fa-play"></i></div>
+                            <div class="portfolio-overlay">
+                                <button class="view-btn" onclick="openVideoModal(this)">
+                                    <i class="fas fa-play-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="category">Video</span>
+                            <h3>Documentary Style Ad</h3>
+                            <p>Behind-the-scenes brand story video.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+        <img src="" alt="Full view" id="lightboxImg">
+    </div>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="videoModal">
+        <button class="lightbox-close" onclick="closeVideoModal()"><i class="fas fa-times"></i></button>
+        <div class="video-wrapper">
+            <video controls id="modalVideo">
+                <source src="" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-bullseye"></i>
+                    <span>Target & Transparent</span>
+                    <p>Precision. Clarity. Results.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="services.html">Services</a>
+                    <a href="index.html#about">About</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Target & Transparent. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
