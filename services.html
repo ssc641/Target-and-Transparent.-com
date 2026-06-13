@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Target & Transparent</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Mobile Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2>Target & Transparent</h2>
+            <button class="close-btn" onclick="toggleSidebar()"><i class="fas fa-times"></i></button>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a>
+            <a href="services.html" class="active"><i class="fas fa-cogs"></i> Services</a>
+            <a href="index.html#about"><i class="fas fa-info-circle"></i> About</a>
+            <a href="index.html#contact"><i class="fas fa-envelope"></i> Contact</a>
+        </nav>
+    </div>
+
+    <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="logo">
+            <i class="fas fa-bullseye"></i>
+            <span>Target & Transparent</span>
+        </div>
+        <button class="menu-toggle" id="menuToggle" onclick="toggleSidebar()">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="desktop-nav">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="services.html" class="active">Services</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Services Hero -->
+    <section class="page-hero services-hero">
+        <div class="blue-overlay"></div>
+        <div class="hero-content">
+            <h1>Our Services</h1>
+            <p>Tailored solutions with transparent pricing and measurable results</p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services-section">
+        <div class="container">
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="assets/service-branding.jpg" alt="Branding Services">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Brand Identity</h3>
+                        <p>Complete branding solutions from logo design to brand guidelines that make your business stand out.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Logo Design</li>
+                            <li><i class="fas fa-check"></i> Brand Guidelines</li>
+                            <li><i class="fas fa-check"></i> Stationery Design</li>
+                            <li><i class="fas fa-check"></i> Brand Strategy</li>
+                        </ul>
+                        <a href="#packages" class="btn btn-outline">View Packages</a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="assets/service-web.jpg" alt="Web Development">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Web Development</h3>
+                        <p>Responsive, modern websites and web applications built with the latest technologies.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Responsive Design</li>
+                            <li><i class="fas fa-check"></i> E-Commerce</li>
+                            <li><i class="fas fa-check"></i> CMS Integration</li>
+                            <li><i class="fas fa-check"></i> SEO Optimized</li>
+                        </ul>
+                        <a href="#packages" class="btn btn-outline">View Packages</a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="assets/service-marketing.jpg" alt="Digital Marketing">
+                        <div class="service-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Digital Marketing</h3>
+                        <p>Data-driven marketing strategies that reach your target audience and drive conversions.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Social Media</li>
+                            <li><i class="fas fa-check"></i> SEO & Content</li>
+                            <li><i class="fas fa-check"></i> PPC Campaigns</li>
+                            <li><i class="fas fa-check"></i> Analytics</li>
+                        </ul>
+                        <a href="#packages" class="btn btn-outline">View Packages</a>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="assets/service-video.jpg" alt="Video Production">
+                        <div class="service-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Video Production</h3>
+                        <p>Professional video content from concept to final edit for all platforms.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Promotional Videos</li>
+                            <li><i class="fas fa-check"></i> Product Demos</li>
+                            <li><i class="fas fa-check"></i> Event Coverage</li>
+                            <li><i class="fas fa-check"></i> Motion Graphics</li>
+                        </ul>
+                        <a href="#packages" class="btn btn-outline">View Packages</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Service Packages</h2>
+                <div class="underline"></div>
+                <p>Transparent pricing for every budget</p>
+            </div>
+            
+            <div class="packages-grid">
+                <!-- Starter Package -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>Starter</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">299</span>
+                            <span class="period">/project</span>
+                        </div>
+                    </div>
+                    <div class="package-body">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Basic Brand Consultation</li>
+                            <li><i class="fas fa-check"></i> 2 Design Concepts</li>
+                            <li><i class="fas fa-check"></i> 3 Revisions</li>
+                            <li><i class="fas fa-check"></i> Source Files</li>
+                            <li class="disabled"><i class="fas fa-times"></i> Priority Support</li>
+                            <li class="disabled"><i class="fas fa-times"></i> Strategy Session</li>
+                        </ul>
+                        <button class="btn btn-package">Get Started</button>
+                    </div>
+                </div>
+
+                <!-- Professional Package -->
+                <div class="package-card featured">
+                    <div class="package-badge">Most Popular</div>
+                    <div class="package-header">
+                        <h3>Professional</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">599</span>
+                            <span class="period">/project</span>
+                        </div>
+                    </div>
+                    <div class="package-body">
+                        <ul>
+                            <li><i class="fas fa-check"></i> In-depth Brand Analysis</li>
+                            <li><i class="fas fa-check"></i> 5 Design Concepts</li>
+                            <li><i class="fas fa-check"></i> Unlimited Revisions</li>
+                            <li><i class="fas fa-check"></i> All Source Files</li>
+                            <li><i class="fas fa-check"></i> Priority Support</li>
+                            <li><i class="fas fa-check"></i> 1 Strategy Session</li>
+                        </ul>
+                        <button class="btn btn-package btn-primary">Get Started</button>
+                    </div>
+                </div>
+
+                <!-- Enterprise Package -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>Enterprise</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">999</span>
+                            <span class="period">/project</span>
+                        </div>
+                    </div>
+                    <div class="package-body">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Full Brand Audit</li>
+                            <li><i class="fas fa-check"></i> Unlimited Concepts</li>
+                            <li><i class="fas fa-check"></i> Unlimited Revisions</li>
+                            <li><i class="fas fa-check"></i> All Files + Assets</li>
+                            <li><i class="fas fa-check"></i> 24/7 Priority Support</li>
+                            <li><i class="fas fa-check"></i> 3 Strategy Sessions</li>
+                        </ul>
+                        <button class="btn btn-package">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Let's discuss how we can help you achieve your goals with precision and transparency.</p>
+                <a href="index.html#contact" class="btn btn-primary btn-large">Contact Us Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-bullseye"></i>
+                    <span>Target & Transparent</span>
+                    <p>Precision. Clarity. Results.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="services.html">Services</a>
+                    <a href="index.html#about">About</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Target & Transparent. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
