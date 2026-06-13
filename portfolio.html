@@ -6,6 +6,8 @@
     <title>Portfolio | Target & Transparent Construction</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="View our completed construction projects - residential, commercial, industrial, and renovations in Gweru, Zimbabwe.">
+<base target="_blank">
 </head>
 <body>
 
@@ -232,81 +234,9 @@
     </footer>
 
     <!-- ============================================
-         JAVASCRIPT
+         JAVASCRIPT - Linked from external file
          ============================================ -->
-    <script>
-        // Sidebar Toggle
-        function toggleSidebar() {
-            const sidebar = document.getElementById('sidebar');
-            const overlay = document.getElementById('overlay');
-            const toggle = document.getElementById('menuToggle');
-            sidebar.classList.toggle('active');
-            overlay.classList.toggle('active');
-            toggle.classList.toggle('active');
-        }
-
-        document.querySelectorAll('.sidebar-nav a').forEach(link => {
-            link.addEventListener('click', () => {
-                if (window.innerWidth < 992) toggleSidebar();
-            });
-        });
-
-        // Portfolio Filter
-        function filterPortfolio(category) {
-            const items = document.querySelectorAll('.portfolio-item');
-            const buttons = document.querySelectorAll('.filter-btn');
-
-            buttons.forEach(btn => btn.classList.remove('active'));
-            event.target.classList.add('active');
-
-            items.forEach(item => {
-                if (category === 'all' || item.dataset.category === category) {
-                    item.style.display = 'block';
-                    item.style.animation = 'fadeInUp 0.5s ease forwards';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        }
-
-        // Video Play on Hover
-        document.querySelectorAll('.portfolio-video-item').forEach(item => {
-            const video = item.querySelector('video');
-            const playBtn = item.querySelector('.play-btn');
-
-            item.addEventListener('mouseenter', () => {
-                if (video) video.play();
-            });
-
-            item.addEventListener('mouseleave', () => {
-                if (video) {
-                    video.pause();
-                    video.currentTime = 0;
-                }
-            });
-
-            item.addEventListener('click', () => {
-                if (video) {
-                    if (video.paused) {
-                        video.play();
-                        playBtn.style.opacity = '0';
-                    } else {
-                        video.pause();
-                        playBtn.style.opacity = '1';
-                    }
-                }
-            });
-        });
-
-        // Fade In Animation
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) entry.target.classList.add('visible');
-            });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-    </script>
+    <script src="scripts.js"></script>
 
 </body>
 </html>
