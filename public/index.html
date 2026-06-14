@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target & Transparent Construction | Building Trust, Building Dreams</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Target & Transparent Construction - Premium construction services in Gweru, Zimbabwe. Residential, commercial, and industrial building solutions.">
+<base target="_blank">
+<meta name="google-site-verification"content="6eaw7Jc5ROVOpceP3U7B-iAMP7HuDaUCn4QIEywcKz0" />
+</head>
+<body>
+
+    <!-- ============================================
+         SIDEBAR (Mobile Navigation)
+         ============================================ -->
+    <button class="menu-toggle" id="menuToggle" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <!-- LOGO SPACE - Insert your logo here -->
+            <div class="sidebar-logo-space">
+                <img src="assets/Logo.png" alt="Target & Transparent Construction Logo" onerror="this.style.display='none'; this.parentElement.innerHTML='<i class=\'fas fa-hard-hat\' style=\'font-size:2rem;color:var(--primary-blue)\'></i>'">
+            </div>
+            <div class="sidebar-logo-text">Target & Transparent</div>
+        </div>
+        <div class="sidebar-nav">
+            <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+            <a href="services.html"><i class="fas fa-tools"></i> Services</a>
+            <a href="portfolio.html"><i class="fas fa-images"></i> Portfolio</a>
+            <a href="#about"><i class="fas fa-info-circle"></i> About Us</a>
+            <a href="#contact-info"><i class="fas fa-phone"></i> Contact</a>
+        </div>
+        <div class="sidebar-footer">
+            <p>© 2026 Target & Transparent Construction</p>
+        </div>
+    </nav>
+
+    <!-- ============================================
+         DESKTOP NAVBAR (Visible on Large Screens)
+         ============================================ -->
+    <nav class="desktop-nav">
+        <div class="desktop-nav-inner">
+            <div style="display:flex;align-items:center;">
+                <!-- LOGO SPACE - Insert your logo here -->
+                <div class="desktop-logo-space">
+                    <img src="assets/Logo.png" alt="Logo" onerror="this.style.display='none'; this.parentElement.innerHTML='<i class=\'fas fa-hard-hat\' style=\'font-size:1.2rem;color:var(--primary-blue)\'></i>'">
+                </div>
+                <div class="desktop-logo-text">Target & <span>Transparent</span></div>
+            </div>
+            <ul class="desktop-nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact-info">Contact</a></li>
+                <li><a href="services.html#packages" class="desktop-nav-cta">Get a Quote</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ============================================
+         HERO SECTION WITH VIDEO BACKGROUND
+         ============================================ -->
+    <section class="hero">
+        <!-- VIDEO BACKGROUND - Replace with your video file -->
+        <video class="hero-video-bg" autoplay muted loop playsinline poster="assets/hero-poster.jpg">
+            <source src="assets/bgvid.mp4" type="video/mp4">
+        </video>
+
+        <!-- Fallback placeholder if video is not available -->
+        <div class="hero-video-placeholder" id="videoFallback" style="display:none;">
+            <i class="fas fa-video"></i>
+            <p>Insert your construction video here</p>
+        </div>
+
+        <!-- Blue overlay on top of video -->
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <div class="hero-badge">🏗️ Premium Construction Services</div>
+            <h1 class="hero-title">Building Your <span>Dreams</span> With Integrity</h1>
+            <p class="hero-subtitle">Target & Transparent Construction delivers world-class building solutions with honesty, precision, and unmatched quality. Your vision, our expertise.</p>
+            <div class="hero-buttons">
+                <a href="services.html" class="btn btn-primary">
+                    <i class="fas fa-hammer"></i> Our Services
+                </a>
+                <a href="portfolio.html" class="btn btn-outline">
+                    <i class="fas fa-images"></i> View Portfolio
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- ============================================
+         ABOUT SECTION
+         ============================================ -->
+    <section class="about-section" id="about">
+        <div class="about-grid">
+            <div class="about-image fade-in">
+                <img src="assets/abtimg.png" alt="Our Construction Team" onerror="this.src='https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&h=400&fit=crop'">
+            </div>
+            <div class="about-content fade-in">
+                <h2>About <span>Us</span></h2>
+                <p>Target & Transparent Construction is a premier building company based in Shurugwi, Zimbabwe. We specialize in residential, commercial, and industrial construction projects that stand the test of time.</p>
+                <p>Our commitment to transparency means no hidden costs, no surprises—just honest work delivered with professionalism. From foundation to finish, we handle every detail with precision and care.</p>
+                <p>With years of experience and a team of skilled professionals, we transform your architectural dreams into solid reality. We believe every structure tells a story, and we're here to help you write yours.</p>
+
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">30+</span>
+                        <span class="stat-label">Expert Workers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         GOOGLE MAPS SECTION
+         ============================================ -->
+    <section class="map-section" id="location">
+        <div class="map-container">
+            <div class="section-header">
+                <div class="section-label">📍 Find Us</div>
+                <h2 class="section-title">Our Location</h2>
+                <p class="section-subtitle">Visit our office to discuss your next project in person</p>
+            </div>
+            <div class="map-wrapper">
+                <!-- GOOGLE MAPS EMBED - Replace with your actual embed code -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3797.1234567890123!2d29.8167!3d-19.4500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDI3JzAwLjAiUyAyOcKwNDknMDAuMCJF!5e0!3m2!1sen!2szw!4v1234567890"
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <!-- Replace the src above with your actual Google Maps embed URL -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CONTACT INFO SECTION
+         ============================================ -->
+    <section class="contact-info-section" id="contact-info">
+        <div class="section-header" style="margin-bottom:50px;">
+            <div class="section-label" style="color:var(--gold);">📞 Get In Touch</div>
+            <h2 class="section-title" style="color:var(--white);">Contact Information</h2>
+            <p class="section-subtitle" style="color:rgba(255,255,255,0.7);">Reach out through any of these channels. We're ready to build with you.</p>
+        </div>
+
+        <div class="contact-grid">
+            <!-- Email -->
+            <div class="contact-card fade-in">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3>Email Us</h3>
+                <a href="mailto:info@targetandtransparent.co.zw">info@targetandtransparent.co.zw</a>
+                <a href="mailto:quotes@targetandtransparent.co.zw">quotes@targetandtransparent.co.zw</a>
+            </div>
+
+            <!-- WhatsApp -->
+            <div class="contact-card fade-in">
+                <div class="contact-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <h3>WhatsApp</h3>
+                <a href="https://wa.me/263776748482" target="_blank">+263 77 674 8482</a>
+                <a href="https://wa.me/263713785919" target="_blank">+263 71 378 5919</a>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-card fade-in">
+                <div class="contact-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <h3>Call Us</h3>
+                <a href="tel:+263776748482"></a>
+                <a href="tel:+263713785919"></a>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="contact-card fade-in">
+                <div class="contact-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+                <h3>LinkedIn</h3>
+                <a href="https://linkedin.com/company/target-transparent-construction" target="_blank">@target-transparent-construction</a>
+                <div class="social-links">
+                    <a href="https://linkedin.com/company/target-transparent-construction" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- Twitter/X -->
+            <div class="contact-card fade-in">
+                <div class="contact-icon">
+                    <i class="fab fa-x-twitter"></i>
+                </div>
+                <h3>Twitter / X</h3>
+                <a href="https://twitter.com/TargetTransparent" target="_blank">@TargetTransparent</a>
+                <div class="social-links">
+                    <a href="https://twitter.com/TargetTransparent" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                </div>
+            </div>
+
+            <!-- Office Address -->
+            <div class="contact-card fade-in">
+                <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>Office Address</h3>
+                <p>123 7551 IMPALI,<br>SHURUGWI, Zimbabwe</p>
+                <p style="font-size:0.8rem;opacity:0.6;margin-top:8px;">Mon - Fri: 8:00 AM - 5:00 PM</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>Target & <span>Transparent</span></h3>
+                <p>Building trust through transparency. Your premier construction partner in Gweru, Zimbabwe and beyond.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+                    <li><a href="portfolio.html"><i class="fas fa-chevron-right"></i> Portfolio</a></li>
+                    <li><a href="services.html#packages"><i class="fas fa-chevron-right"></i> Packages</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:info@targetandtransparent.co.zw"><i class="fas fa-envelope"></i> info@targetandtransparent.co.zw</a></li>
+                    <li><a href="tel:+263713785919"><i class="fas fa-phone"></i> +263 71 234 5678</a></li>
+                    <li><a href="https://wa.me/263776748482"><i class="fab fa-whatsapp"></i> WhatsApp Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Social Media</h4>
+                <ul>
+                    <li><a href="https://linkedin.com/company/target-transparent-construction" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="https://twitter.com/TargetTransparent" target="_blank"><i class="fab fa-x-twitter"></i> Twitter</a></li>
+                    <li><a href="https://facebook.com/TargetTransparent" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Target & Transparent Construction. All rights reserved. Built with ❤️ in Gweru, Zimbabwe.</p>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         JAVASCRIPT - Linked from external file
+         ============================================ -->
+    <script src="scripts.js"></script>
+
+</body>
+</html>
