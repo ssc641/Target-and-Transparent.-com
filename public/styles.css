@@ -136,17 +136,72 @@ body {
     font-size: 0.75rem;
 }
 
+/* Mobile Top Bar */
+.mobile-topbar {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    background: rgba(255,255,255,0.97);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 15px var(--shadow);
+    z-index: 1001;
+    padding: 0 15px;
+    gap: 12px;
+}
+
+.mobile-topbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+.mobile-topbar-logo-img {
+    width: 42px;
+    height: 42px;
+    border: 2px solid var(--gold);
+    border-radius: 6px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+}
+
+.mobile-topbar-logo-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mobile-topbar-logo-text {
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--dark-blue);
+    letter-spacing: 0.3px;
+    line-height: 1.2;
+}
+
+.mobile-topbar-logo-text span {
+    color: var(--primary-blue);
+}
+
 /* Toggle Button */
 .menu-toggle {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 1001;
-    width: 50px;
-    height: 50px;
+    position: relative;
+    top: auto;
+    left: auto;
+    z-index: 1002;
+    width: 44px;
+    height: 44px;
     background: var(--primary-blue);
     border: none;
-    border-radius: 12px;
+    border-radius: 10px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -155,6 +210,7 @@ body {
     gap: 5px;
     box-shadow: 0 4px 15px var(--shadow-lg);
     transition: var(--transition);
+    flex-shrink: 0;
 }
 
 .menu-toggle:hover {
@@ -1270,6 +1326,10 @@ body {
         display: none;
     }
 
+    .mobile-topbar {
+        display: none;
+    }
+
     .sidebar {
         display: none;
     }
@@ -1297,6 +1357,17 @@ body {
 
     .section {
         padding: 100px 40px;
+    }
+}
+
+@media (max-width: 991px) {
+    .hero {
+        padding-top: 65px;
+    }
+
+    .portfolio-hero,
+    .services-hero {
+        padding-top: 105px;
     }
 }
 
@@ -1410,4 +1481,4 @@ body {
 ::selection {
     background: var(--primary-blue);
     color: var(--white);
-}
+   }
