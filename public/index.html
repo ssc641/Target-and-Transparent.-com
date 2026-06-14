@@ -13,13 +13,21 @@
 <body>
 
     <!-- ============================================
-         SIDEBAR (Mobile Navigation)
+         MOBILE TOP BAR
          ============================================ -->
-    <button class="menu-toggle" id="menuToggle" onclick="toggleSidebar()">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
+    <div class="mobile-topbar">
+        <button class="menu-toggle" id="menuToggle" onclick="toggleSidebar()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="mobile-topbar-logo">
+            <div class="mobile-topbar-logo-img">
+                <img src="assets/Logo.png" alt="Logo" onerror="this.style.display='none'; this.parentElement.innerHTML='<i class=\'fas fa-hard-hat\' style=\'font-size:1.3rem;color:var(--primary-blue)\'></i>'">
+            </div>
+            <div class="mobile-topbar-logo-text">Target & <span>Transparent</span></div>
+        </div>
+    </div>
 
     <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
 
